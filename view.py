@@ -1,10 +1,7 @@
+import model
 from model import ShoeModel
 
 class ShoeView:
-    def displey_shoe(self, store):
+    def showShoe(self, store):
         for shoe in store:
-            print(shoe)
-
-
-
-
+            print(f"{store}")

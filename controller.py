@@ -1,4 +1,5 @@
 from model import Shoe
+from view import ShoeView
 
 class ShoeController:
     def __init__(self, model, view):
@@ -9,9 +10,5 @@ class ShoeController:
         self.model.addShoe(shoe)
 
     def showShoes(self):
-        store = self.model.showShoe
-        self.view.displey_shoe(store)
-
-
-
-
+        store = self.model.showShoe()
+        self.view.showShoe(store)

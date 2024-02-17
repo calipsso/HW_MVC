@@ -10,8 +10,8 @@ class Shoe:
 class ShoeModel:
     def __init__(self):
         self.store = []
-    def addShoe(self, add):
-        self.store.append(add)
+    def addShoe(self, shoe):
+        self.store.append(shoe)
     def showShoe(self):
         return self.store
     #def sizeShoe(self, numberOfshoe):
