@@ -19,11 +19,9 @@ class ShoeModel:
         return self.store
     def showShoe(self):
         return self.store
-    #def shoeSize(self, sizeOfshoe):
-
-        #for shoe in self.store:
-            #if shoe.size == sizeOfshoe:
-                #return shoe
+    def shoeSize(self, sizeOfshoe):
+        self.store = list(filter(lambda shoe: shoe.size == sizeOfshoe, self.store))
+        return self.store
     #def totalShoePrice(self):
         #totalPrice = 0
         #for shoe in self.store:

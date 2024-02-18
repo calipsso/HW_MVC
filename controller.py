@@ -15,6 +15,10 @@ class ShoeController:
         store = self.model.showShoe()
         self.view.showShoe(store)
 
-    #def get_shoeSize(self):
+    def shoeSize(self, sizeOfShoe):
+        self.model.shoeSize(sizeOfShoe)
+        self.showShoes()
+
+
 
 
