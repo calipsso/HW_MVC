@@ -14,11 +14,15 @@ class ShoeModel:
         self.store = []
     def addShoe(self, shoe):
         self.store.append(shoe)
+    def removeShoe(self, id):
+        self.store = list(filter(lambda shoe: shoe.ids != id, self.store))
+        return self.store
     def showShoe(self):
         return self.store
-    #def sizeShoe(self, numberOfshoe):
+    #def shoeSize(self, sizeOfshoe):
+
         #for shoe in self.store:
-            #if shoe.size == numberOfshoe:
+            #if shoe.size == sizeOfshoe:
                 #return shoe
     #def totalShoePrice(self):
         #totalPrice = 0

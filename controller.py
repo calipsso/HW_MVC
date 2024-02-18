@@ -1,5 +1,5 @@
 from model import Shoe
-from view import ShoeView
+
 
 class ShoeController:
     def __init__(self, model, view):
@@ -8,7 +8,13 @@ class ShoeController:
     def addShoe(self,ids, gender_type, types, color, price, brand, size):
         shoe = Shoe(ids, gender_type, types, color, price, brand, size)
         self.model.addShoe(shoe)
-
+    def removeShoe(self,id):
+        self.model.removeShoe(id)
+        self.showShoes()
     def showShoes(self):
         store = self.model.showShoe()
         self.view.showShoe(store)
+
+    #def get_shoeSize(self):
+
+
