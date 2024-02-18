@@ -18,6 +18,11 @@ class ShoeController:
     def shoeSize(self, sizeOfShoe):
         self.model.shoeSize(sizeOfShoe)
         self.showShoes()
+    def totalShoePrice(self):
+        self.model.totalShoePrice()
+        self.showShoes()
+
+
 
 
 
